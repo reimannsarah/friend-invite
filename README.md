@@ -98,7 +98,7 @@ HTTP/1.1 400 Bad Request
 ```
 
 
-## Screens
+## Mockups
 
 Base Page
 ![Base page](https://github.com/olioapps/intern-interview-homework/raw/master/docs/images/base-page.png?raw=true "Base page")
