@@ -1,3 +1,41 @@
+# Olio Apps Intern Interview Homework
+
+## Requirements
+
+Hello! Our app needs to let users invite their friends!
+
+Create an invite modal pop-up.
+
+- When user comes to the website, they will see an "Invite your friends" button.
+- When the user clicks the "Invite your friends" button, an "Invite friends" modal should pop up on screen.
+- When the modal pops up, the app should fetch and display a list of meeting buddies from the server to invite.
+- The user should be able to click on each meeting buddy to toggle their selection.
+- Send invite button should default to be disabled and say "Send invites"
+- The send invite button label should enable and update the label with the number of people as you select items
+  - If only one person is selected, the label should read "Send invite to 1 person"
+  - If more than one person is selected, it should show plural "people" and update with the number selected: "Send invites to 2 people"
+  - If no items are selected, it should be disabled and say "Send invites"
+- When the user clicks the send invite button, the app should
+  - post list of selected buddies to the server
+  - close the modal
+  - display a message - "invites sent"
+- Clicking the X button in the upper left should simply close the modal
+
+## Screens
+
+Base Page
+![Base page](https://github.com/olioapps/intern-interview-homework/raw/master/docs/images/base-page.png?raw=true "Base page")
+
+Modal without Selections
+![Modal without selections](https://github.com/olioapps/intern-interview-homework/raw/master/docs/images/modal-without-selections.png?raw=true "Modal without selections")
+
+Modal with selections
+![Modal with selections](https://github.com/olioapps/intern-interview-homework/raw/master/docs/images/modal-with-selections.png?raw=true "Modal with selections")
+
+----
+
+## Create React App Readme Info
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
