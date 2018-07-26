@@ -18,7 +18,7 @@ Create an invite modal pop-up.
 - When the user clicks the send invite button, the app should
   - post list of selected buddies to the server
   - close the modal
-  - display a message - "invites sent"
+  - display the message that comes back in the server response somewhere on the screen
 - Clicking the X button in the upper left should simply close the modal
 
 ## Misc
