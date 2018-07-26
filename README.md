@@ -21,6 +21,13 @@ Create an invite modal pop-up.
   - display a message - "invites sent"
 - Clicking the X button in the upper left should simply close the modal
 
+## Misc
+
+- Please do this exercise by yourself. Use the internet and resources at your disposal, but we want to see how you yourself can solve this problem.
+- It is not important to exactly match the mockups or make high fidenlity pretty UI.
+- We are looking for functionality, completeness and how you solve the problem.
+- Show your progression by making many small commits as you implement vs one commit with the entire solution.
+
 ## Sample Data
 
 The sample invite candidate data is located in `src/inviteCandidates.js`.
