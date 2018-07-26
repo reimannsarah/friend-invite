@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import inviteCandidates from './inviteCandidates.js';
+
+// You can use mock date for building components, then wire up to API later
+console.log("inviteCandidates: ", inviteCandidates)
 
 class App extends Component {
   render() {

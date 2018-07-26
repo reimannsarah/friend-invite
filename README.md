@@ -8,8 +8,8 @@ Create an invite modal pop-up.
 
 - When user comes to the website, they will see an "Invite your friends" button.
 - When the user clicks the "Invite your friends" button, an "Invite friends" modal should pop up on screen.
-- When the modal pops up, the app should fetch and display a list of meeting buddies from the server to invite.
-- The user should be able to click on each meeting buddy to toggle their selection.
+- When the modal pops up, the app should fetch and display a list of invite candidates from the server to invite. (You can use included mock data at `src/inviteCandidates.js` to build components)
+- The user should be able to click on each invite candidate to toggle their selection.
 - Send invite button should default to be disabled and say "Send invites"
 - The send invite button label should enable and update the label with the number of people as you select items
   - If only one person is selected, the label should read "Send invite to 1 person"
@@ -20,6 +20,76 @@ Create an invite modal pop-up.
   - close the modal
   - display a message - "invites sent"
 - Clicking the X button in the upper left should simply close the modal
+
+## Sample Data
+
+The sample invite candidate data is located in `src/inviteCandidates.js`.
+
+## REST API
+
+The backend REST API is located at https://olio-interview-homework.herokuapp.com/
+
+There are two endpoints. Auth is required, via a query parameter.
+
+You should have received your auth code in the email about this exercise.
+
+### Fetch invitee candidates
+
+GET https://olio-interview-homework.herokuapp.com/invite-candidates?auth=YOURAUTHCODE
+
+#### Response
+```
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+
+[
+  {
+    "firstName": "Mary",
+    "lastName": "Adams",
+    "email": "mary.adams@gmail.com"
+  },
+  {
+    "firstName": "James",
+    "lastName": "Frank",
+    "email": "james.frank@gmail.com"
+  },
+  ...more...
+]
+```
+
+### Send invites
+
+POST https://olio-interview-homework.herokuapp.com/invites?auth=YOURAUTHCODE
+
+#### Request JSON
+```
+[
+  "email1@example.com",
+  "email2@example.com"
+]
+```
+
+#### Success Response
+
+```
+{
+  "message": "Invites have been sent to 2 friends."
+}
+```
+
+#### Failure Responses
+
+```
+HTTP/1.1 400 Bad Request
+{"error":"invalid email format"}
+
+HTTP/1.1 400 Bad Request
+{"error":"empty array"}
+
+HTTP/1.1 400 Bad Request
+{"error":"invalid request"}
+```
+
 
 ## Screens
 
