@@ -84,9 +84,12 @@ POST https://olio-interview-homework.herokuapp.com/invites?auth=YOURAUTHCODE
 }
 ```
 
-#### Failure Responses
+#### Possible error responses
 
 ```
+HTTP/1.1 401 Unauthorized
+{"error":"not authenticated"}
+
 HTTP/1.1 400 Bad Request
 {"error":"invalid email format"}
 
@@ -98,7 +101,7 @@ HTTP/1.1 400 Bad Request
 ```
 
 
-## Mockups
+## Screen Mockups
 
 Base Page
 ![Base page](https://github.com/olioapps/intern-interview-homework/raw/master/docs/images/base-page.png?raw=true "Base page")
