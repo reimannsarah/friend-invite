@@ -15,7 +15,7 @@ Hello! Our app needs to let users invite their friends! See below for all info, 
 ## Misc
 
 - Please do this exercise by yourself. Use the internet and resources at your disposal, but we want to see how you yourself can solve this problem.
-- It is not important to exactly match the mockups or make high fidenlity pretty UI.
+- It is not important to exactly match the mockups or make high fidelity pretty UI.
 - We are looking for functionality, completeness and how you solve the problem.
 - Show your progression by making many small commits as you implement vs one commit with the entire solution.
 
