@@ -9,7 +9,8 @@ Hello! Our app needs to let users invite their friends! See below for all info, 
 - This repo uses the standard boilerplate that is generated with https://github.com/facebook/create-react-app.
 - You should be able to check out the repo, install its dependencies, and run the app locally to do development.
 - To use the rest API, you'll need to use an auth code, which should be emailed to you.
-- Clone the repo to your local machine, create a new repo on your own Github account, and commit your work to it.
+- Clone the repo to your local machine, and commit locally. Please keep your work local and do not post the repo to Github.
+- When you are finished, zip up the entire folder (including the .git folder) and email it back to us.
 
 ## Misc
 
