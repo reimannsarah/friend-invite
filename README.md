@@ -114,13 +114,13 @@ HTTP/1.1 400 Bad Request
 ## Screen Mockups
 
 Base Page
-![Base page](https://github.com/olioapps/intern-interview-homework/raw/master/docs/images/base-page.png?raw=true "Base page")
+![Base page](https://github.com/olioapps/intern-interview-homework/raw/master/docs/images/base-page@2x.png?raw=true "Base page")
 
 Modal without Selections
-![Modal without selections](https://github.com/olioapps/intern-interview-homework/raw/master/docs/images/modal-without-selections.png?raw=true "Modal without selections")
+![Modal without selections](https://github.com/olioapps/intern-interview-homework/raw/master/docs/images/modal-without-selections@2x.png?raw=true "Modal without selections")
 
 Modal with selections
-![Modal with selections](https://github.com/olioapps/intern-interview-homework/raw/master/docs/images/modal-with-selections.png?raw=true "Modal with selections")
+![Modal with selections](https://github.com/olioapps/intern-interview-homework/raw/master/docs/images/modal-with-selections@2x.png?raw=true "Modal with selections")
 
 ----
 
