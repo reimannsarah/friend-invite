@@ -1,8 +1,24 @@
 # Olio Apps Intern Interview Homework
 
-## Requirements
+## Intro
 
-Hello! Our app needs to let users invite their friends!
+Hello! Our app needs to let users invite their friends! See below for all info, requirements, api docs, and UI mockups.
+
+## Getting started
+
+- This repo uses the standard boilerplate that is generated with https://github.com/facebook/create-react-app.
+- You should be able to check out the repo, install its dependencies, and run the app locally to do development.
+- To use the rest API, you'll need to use an auth code, which should be emailed to you.
+- Clone the repo to your local machine, create a new repo on your own Github account, and commit your work to it.
+
+## Misc
+
+- Please do this exercise by yourself. Use the internet and resources at your disposal, but we want to see how you yourself can solve this problem.
+- It is not important to exactly match the mockups or make high fidenlity pretty UI.
+- We are looking for functionality, completeness and how you solve the problem.
+- Show your progression by making many small commits as you implement vs one commit with the entire solution.
+
+## Requirements
 
 Create an invite modal pop-up.
 
@@ -20,13 +36,6 @@ Create an invite modal pop-up.
   - close the modal
   - display the message that comes back in the server response somewhere on the screen
 - Clicking the X button in the upper left should simply close the modal
-
-## Misc
-
-- Please do this exercise by yourself. Use the internet and resources at your disposal, but we want to see how you yourself can solve this problem.
-- It is not important to exactly match the mockups or make high fidenlity pretty UI.
-- We are looking for functionality, completeness and how you solve the problem.
-- Show your progression by making many small commits as you implement vs one commit with the entire solution.
 
 ## Sample Data
 
