@@ -10,7 +10,7 @@ Hello! Our app needs to let users invite their friends! See below for all info, 
 - You should be able to check out the repo, install its dependencies, and run the app locally to do development.
 - To use the rest API, you'll need to use an auth code, which should be emailed to you.
 - Clone the repo to your local machine, and commit locally. Please keep your work local and do not post the repo to Github.
-- When you are finished, zip up the entire project folder ([Mac](http://osxdaily.com/2012/01/10/how-to-zip-files-in-mac-os-x/) | [Windows](https://support.microsoft.com/en-us/help/14200/windows-compress-uncompress-zip-files) ) and email it back to us.
+- When you are finished, zip up the entire project folder ([Mac](http://osxdaily.com/2012/01/10/how-to-zip-files-in-mac-os-x/) | [Windows](https://support.microsoft.com/en-us/help/14200/windows-compress-uncompress-zip-files) ) and email it back to us. If the file is too big for email, you can try deleting the node_modules folder first, and/or uploading to Google Drive or Dropbox and sharing that way.
 
 ## Misc
 
