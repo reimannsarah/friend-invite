@@ -1,8 +1,10 @@
 import React from "react";
+import FriendsModal from "../organisms/FriendsModal";
+import sampleData from "../../inviteCandidates";
 
 const Modal = () => {
   return (
-    <p>Modal</p>
+    <FriendsModal friends={sampleData}/>
   )
 }
 
