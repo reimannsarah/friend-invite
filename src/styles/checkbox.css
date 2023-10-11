@@ -1,0 +1,14 @@
+.checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  background: white;
+  width: 1.2em;
+  height: 1.2em;
+  border: 1px solid black;
+  transition-duration: 0.3s;
+  cursor: pointer;
+  margin-right: 0.5em;
+  border-radius: 50%;
+}

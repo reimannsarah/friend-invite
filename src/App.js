@@ -18,7 +18,7 @@ const App = () => {
   return (
     <div className="App">
       {isModalOpen ? (
-        <Modal />
+        <Modal toggleModal={toggleModal}/>
       ) : (
         <Home toggleModal={toggleModal}/>
       )}

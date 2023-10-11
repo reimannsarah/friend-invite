@@ -1,10 +1,11 @@
 import React from "react";
+import '../../styles/name_email.css'
 
 const NameEmail = ({ name, email }) => {
   return (
-    <div>
-      <h4>{name}</h4>
-      <p>{email}</p>
+    <div className="name-email">
+      <h5 className="name">{name}</h5>
+      <p className="email">{email}</p>
     </div>
   );
 }
