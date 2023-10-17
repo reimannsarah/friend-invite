@@ -1,7 +1,4 @@
 .checkbox {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
   outline: 0;
   background: white;
   width: 1.2em;
