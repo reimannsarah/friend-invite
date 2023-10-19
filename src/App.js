@@ -1,26 +1,34 @@
 import React, { Component, useState } from 'react';
-import logo from './logo.svg';
 import './App.css';
-import inviteCandidates from './inviteCandidates.js';
 import Home from './components/templates/Home.jsx';
 import Modal from './components/templates/Modal';
-
-// You can use mock data for building components, then wire up to API later
-console.log("inviteCandidates: ", inviteCandidates)
+import getFriends from './service/api_service';
 
 const App = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [friends, setFriends] = useState([]);
 
   const toggleModal = () => {
     setIsModalOpen(!isModalOpen);
   }
 
+  const viewFriends = async () => {
+    try {
+      const data = await getFriends();
+      console.log(data);
+      setFriends(data);
+      setIsModalOpen(!isModalOpen);
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
   return (
     <div className="App">
       {isModalOpen ? (
-        <Modal toggleModal={toggleModal}/>
+        <Modal toggleModal={toggleModal} friends={friends}/>
       ) : (
-        <Home toggleModal={toggleModal}/>
+        <Home seeFriends={viewFriends}/>
       )}
     </div>
   )
