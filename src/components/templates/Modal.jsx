@@ -1,10 +1,9 @@
 import React from "react";
 import FriendsModal from "../organisms/FriendsModal";
-import sampleData from "../../inviteCandidates";
 
-const Modal = ({toggleModal}) => {
+const Modal = ({toggleModal, friends}) => {
   return (
-    <FriendsModal toggleModal={toggleModal} friends={sampleData}/>
+    <FriendsModal toggleModal={toggleModal} friends={friends}/>
   )
 }
 
