@@ -2,7 +2,7 @@ import React, { Component, useState } from 'react';
 import './App.css';
 import Home from './components/templates/Home.jsx';
 import Modal from './components/templates/Modal';
-import getFriends from './service/api_service';
+import {getFriends, inviteFriends} from './service/api_service';
 
 const App = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -15,9 +15,17 @@ const App = () => {
   const viewFriends = async () => {
     try {
       const data = await getFriends();
-      console.log(data);
       setFriends(data);
       setIsModalOpen(!isModalOpen);
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
+  const invite = async (listOfFriends) => {
+    try {
+      const data = await inviteFriends(listOfFriends);
+      console.log(data);
     } catch (error) {
       console.log(error);
     }
@@ -26,7 +34,7 @@ const App = () => {
   return (
     <div className="App">
       {isModalOpen ? (
-        <Modal toggleModal={toggleModal} friends={friends}/>
+        <Modal toggleModal={toggleModal} friends={friends} invite={invite}/>
       ) : (
         <Home seeFriends={viewFriends}/>
       )}
