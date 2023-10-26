@@ -1,9 +1,9 @@
 import React from "react";
 import FriendsModal from "../organisms/FriendsModal";
 
-const Modal = ({toggleModal, friends, invite}) => {
+const Modal = ({toggleFriendModal, friends, invite, goHome}) => {
   return (
-    <FriendsModal toggleModal={toggleModal} friends={friends} invite={invite}/>
+    <FriendsModal toggleFriendModal={toggleFriendModal} friends={friends} invite={invite} goHome={goHome}/>
   )
 }
 
