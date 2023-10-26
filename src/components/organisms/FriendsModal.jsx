@@ -5,7 +5,7 @@ import '../../styles/friends_modal.css'
 // import NameEmail from "../atoms/NameEmail";
 import Friend from "../molecules/Friend";
 
-const FriendsModal = ({ friends, toggleModal, invite }) => {
+const FriendsModal = ({ friends, toggleFriendModal, invite, goHome }) => {
   const [selectedFriends, setSelectedFriends] = useState([]);
   const handleClick = (friend) => {
     if(!selectedFriends.includes(friend)){
@@ -17,7 +17,7 @@ const FriendsModal = ({ friends, toggleModal, invite }) => {
 
   return (
     <div className="friends-modal">
-      <Button children={"X"} onClick={toggleModal} />
+      <Button children={"X"} onClick={goHome} />
         {friends.map((friend, index) => {
           return (
             <Friend friend={friend} onClick={() => {handleClick(friend.email)}} key={index}/>
